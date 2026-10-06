@@ -80,16 +80,21 @@ body{
 }
 
 .avatar{
-    width:78px;
-    height:78px;
-    border-radius:22px;
-    background:linear-gradient(135deg,#176bff,#123a8f);
-    display:grid;
-    place-items:center;
-    color:white;
-    font-size:25px;
-    font-weight:800;
-    margin:20px 0 14px;
+    width:105px;
+    height:105px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:20px 0 16px;
+    border:3px solid #176bff;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 18%;
+    display:block;
 }
 
 h1{
@@ -225,7 +230,7 @@ h1{
         </div>
 
         <div class="avatar">
-            RC
+            <img src="perfil.jpg" alt="Romulo Crespo">
         </div>
 
         <h1>Romulo Crespo</h1>
